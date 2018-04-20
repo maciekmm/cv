@@ -1,0 +1,9 @@
+*.gz
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.pdf
+
+confidential.tex

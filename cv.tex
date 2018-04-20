@@ -1,0 +1,160 @@
+\documentclass[a4paper, 11pt]{article}
+
+% Use small margins
+\usepackage[left=1.3cm, right=1.3cm, top=1cm, bottom=2cm]{geometry}
+
+\usepackage[unicode,
+            pdfencoding=auto,
+            pdfinfo={
+              Title={Maciej Mionskowski CV},
+              Author={Maciej Mionskowski},
+              Subject={Maciej Mionskowski CV},
+              Keywords={},
+              Producer={xelatex},
+            },
+]{hyperref}
+
+% Tables
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\setlist[itemize]{nosep,leftmargin=0.175in,bottommargin=0.175in}
+
+% flush right column
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash\hspace{0pt}}X}
+\renewcommand{\arraystretch}{1.15}
+
+% Fonts
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+
+% Footer
+\usepackage{fancyhdr}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize{Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).}}
+
+% prevent mid-word line breaks
+\usepackage[none]{hyphenat}
+
+% Section title
+\usepackage{titlesec}
+\titleformat{\section}{}{}{0pt}{}[]
+\titlespacing*{\section}{0pt}{2ex}{0.1ex}
+\newcommand{\sectitle}[2]{\large{#1} \ \ \Large{\textbf{#2}}}
+
+% Links
+\usepackage[usenames,dvipsnames]{xcolor}
+\RequirePackage{color,graphicx}
+\usepackage{hyperref}
+\definecolor{linkcolor}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolor, linkcolor=linkcolor}
+
+\IfFileExists{confidential.tex}{\include{confidential}}{}
+
+\begin{document}
+	\pagestyle{fancy}
+
+	% Header
+	\begin{center}
+	\begin{multicols}{3}
+		\begin{tabularx}{\linewidth}{@{}l X@{}}
+			\faMapMarker & Gdańsk/Kraków, Poland \\
+			\IfFileExists{confidential.tex}{\faPhone & \href{tel:\phoneNumber}{\prettyPhoneNumber} \\}{}
+			\faEnvelope	 & \href{mailto:maciej@mionskowski.pl}{maciej@mionskowski.pl} \\
+		\end{tabularx} \vfill \null
+
+		\columnbreak
+			{\Huge{Maciej \\ \textbf{Mionskowski}}}
+		\columnbreak
+
+		\begin{tabularx}{\linewidth}{R | r}
+				\href{https://www.mionskowski.pl}{www.mionskowski.pl} & \faLink \\
+				\href{https://www.github.com/maciekmm}{/maciekmm} & \faGithub \\
+				\href{https://www.linkedin.com/in/mionskowski}{/in/mionskowski} & \faLinkedin \\
+		\end{tabularx} \vfill \null
+	\end{multicols}
+	\end{center}
+
+	\begin{section}{\sectitle{\ \faUser}{\ Bio}}
+		A $19$ years old backend developer and tinkerer. Lives in Poland; born in Gdańsk, currently resides and studies in Kraków. Linux user, open-source votary and privacy freak. Addicted to board games, cycling, sailing, skiing and geocaching. Listens to all kinds of music, prefers studio cinemas. Enthusiast of hackathons, motivated by interesting challenges and competition. Fast learner, works well in group or alone.
+	\end{section}
+
+	\newcommand{\education}[6]{
+		\textsc{#1 --- #2} & #3: \textbf{#4} & \small{#5} \\[-0.5ex]
+		\ & \multicolumn{2}{l}{\footnotesize Extracurricular activity: #6}\\
+	}
+
+	\begin{section}{\sectitle{\faGraduationCap}{Education}}
+		\begin{tabularx}{\linewidth}{@{}p{2.8cm} | X  r}
+			\education{2017}{present}{Major}{Computer Science}{AGH University of Science and Technology in Kraków, Poland}{member of BIT science club, member of a sailing club}
+			\education{2014}{2017}{Faculty}{Maths \& IT}{V High School in Gdańsk, Poland}{member of a maths contest group}
+		\end{tabularx}
+	\end{section}
+
+	\newcommand{\tech}[1]{\textbf{#1}}
+
+	\newcommand{\experience}[6]{
+		\textsc{#1 --- #2} & \textbf{#3} & \ifx&#4& #5 \else \href{#4}{#5} \fi \\[-0.5ex]
+		\ & \multicolumn{2}{p{0.82\textwidth}}{\footnotesize{#6}} \\
+	}
+
+	\begin{section}{\sectitle{\faStar}{Experience}}
+		\begin{tabularx}{\linewidth}{@{}p{2.8cm} | X r}
+			\experience{06.2017}{09.2017}{Fullstack developer - \small{internship}}{https://smartmedia.com.pl}{SmartMedia, Gdańsk}{
+				Responsible for developing \emph{STOCK} - software for stocktaking and assets management, written in \tech{PHP}. \newline
+				-- Optimised frontend application written in \tech{JavaScript} and \tech{jQuery} library. (70\% reduction in load time)  \newline
+				-- Optimised \tech{SQL} queries for \tech{MySQL} and \tech{MSSQL} databases. (up to 90\% reduction in query time) \newline
+				-- Wrote a feature backporting script in \tech{Bash} and \tech{Git} which improved development time and satisfaction.
+				\vspace{0.5ex}
+			}
+			\experience{07.2016}{08.2016}{Java developer - \small{internship}}{https://dynatrace.com}{Dynatrace, Gdańsk}{
+				Developed an \href{https://github.com/Dynatrace/Dynatrace-AppMon-IntelliJ-IDEA-Integration-Plugin}{open source} \tech{IntelliJ Platform} plugin which provides integration between IDEs and company's flagship product. The plugin helps with instrumentation of unit tests and \tech{JVM} agent injection for application performance monitoring. Helped with the development of \tech{Jenkins} and \tech{Bamboo} plugins for test instrumentation in \tech{CI} environments.
+				\vspace{0.5ex}
+			}
+			\experience{09.2015}{04.2016}{Freelance Go developer}{}{pricerat.io}{
+				Developed a price analysis tool in \tech{Go} and \tech{Amazon SQS} for detecting price anomalies and webscraping issues. Was responsible for writing \tech{Regex}es for web scrapers. Wrote a highly configurable, \href{https://github.com/maciekmm/sitemap-generator/}{open source}, automatic sitemap generator.
+				\vspace{0.5ex}
+			}
+			\experience{12.2014}{05.2015}{Java developer}{}{AnimatedMOTD}{
+				Developed a Minecraft plugin which exploited game's protocol with an \tech{abstraction} layer that made the software trivial to adapt to different server platforms. Utilized \tech{multithreaded} connection handling, user storage, animation effects and documentation. It also featured a complex \tech{DRM} system. \textbf{900+} copies sold.
+			}
+		\end{tabularx}
+	\end{section}
+
+	\newcommand{\award}[5]{
+		\textsc{#1} & \textbf{#2} place at #3 \ & \footnotesize{#4}\\[-0.5ex]
+		\ifx&#5& \else
+		\ & \multicolumn{2}{p{0.82\textwidth}}{\footnotesize{#5}} \\[0.5ex]
+		\fi
+	}
+
+	\begin{section}{\sectitle{\faTrophy}{Awards}}
+		\begin{tabularx}{\linewidth}{@{}p{2.8cm} | X r}
+			\award{06.2017}{2nd}{\href{https://traveltothecloud.pl}{Travel To The Cloud} hackathon}{Go, Vue.js, Web Scraping}{
+				Together with a friend we created a solution that helps wheelchair-bound and deaf people find places with specific amenities such as doors of minimum width or adapted parking. The prototype earned a second place in the 24 hour long marathon.
+				\vspace{0.5ex}
+			}
+			\award{02.2017}{3rd}{\href{https://eti.pg.edu.pl/informacje}{Igrzyska Akademii ETI}}{Algorithms, C++}{}
+			\award{11.2016}{1st}{\href{http://apki.org/news/hack-heroes-znamy-laureatow/}{Hack Heroes} hackathon}{Go, Angular 2, Ionic, MySQL}{} 
+		\end{tabularx}
+	\end{section}
+
+	\begin{section}{\sectitle{\faCogs}{Skills}}
+		\begin{tabularx}{\linewidth}{@{}l  X}
+			\textsc{languages} & Polish (native), English (advanced) \\
+			\textsc{programming languages} & Java, Go, PHP, SQL, Javascript(Vue.js), HTML5, CSS3, Bash \\
+			\textsc{tools} & Git, Maven, Jenkins, Jira, Docker, \LaTeX, Spreadsheets \\
+			\textsc{other} & GNU/Linux, working well in group or alone, good communication skills
+		\end{tabularx}
+	\end{section}
+
+	\begin{section}{\sectitle{\faFile}{Testimonials}}
+		\small{\textit{I was responsible for managing Maciej's work during his internship at Dynatrace, and I really didn't have much to worry about, apart from running out of tasks planned for him. Maciej is a very talented developer, with great ideas and ability to make them happen. His work was of exceptional quality and technical skills far above expectations you might have for an intern. I'm looking forward to being able to work with Maciej again in the future.} \hfill{Wiktor Bachnik @ Dynatrace Ltd}}
+	\end{section}
+\end{document}
