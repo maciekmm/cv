@@ -82,7 +82,7 @@
 	\end{center}
 
 	\begin{section}{\sectitle{\ \faUser}{\ Bio}}
-		A $19$ years old backend developer and tinkerer. Lives in Poland; born in Gdańsk, currently resides and studies in Kraków. Linux user, open-source votary and privacy freak. Addicted to board games, cycling, sailing, skiing and geocaching. Listens to all kinds of music, prefers studio cinemas. Enthusiast of hackathons, motivated by interesting challenges and competition. Fast learner, works well in group or alone.
+		A $20$ years old backend developer and tinkerer. Lives in Poland; born in Gdańsk, currently resides and studies in Kraków. Linux user, open-source votary and privacy freak. Addicted to board games, cycling, sailing, skiing and geocaching. Listens to all kinds of music, prefers studio cinemas. Enthusiast of hackathons, motivated by interesting challenges and competition. Fast learner, works well in group or alone.
 	\end{section}
 
 	\newcommand{\education}[6]{
@@ -91,9 +91,9 @@
 	}
 
 	\begin{section}{\sectitle{\faGraduationCap}{Education}}
-		\begin{tabularx}{\linewidth}{@{}p{2.8cm} | X  r}
-			\education{2017}{present}{Major}{Computer Science}{AGH University of Science and Technology in Kraków, Poland}{member of BIT science club, member of a sailing club}
-			\education{2014}{2017}{Faculty}{Maths \& IT}{V High School in Gdańsk, Poland}{member of a maths contest group}
+		\begin{tabularx}{\linewidth}{@{}p{2.9cm} | X  r}
+			\education{2017}{present}{Major}{Computer Science}{AGH University of Science and Technology in Kraków, Poland}{Member of the Board at AKŻ - academic sailing club }
+			%{ \education{2014}{2017}{Faculty}{Maths \& IT}{V High School in Gdańsk, Poland}{member of a maths contest group}}%
 		\end{tabularx}
 	\end{section}
 
@@ -105,21 +105,27 @@
 	}
 
 	\begin{section}{\sectitle{\faStar}{Experience}}
-		\begin{tabularx}{\linewidth}{@{}p{2.8cm} | X r}
+		\begin{tabularx}{\linewidth}{@{}p{2.9cm} | X r}
+			\experience{07.2018}{present}{Software developer}{https://antsolutions.eu}{ANT sp. z o.o.}{
+				Responsible for developing visualisation software used in automation of factories. Written in \tech{Java} \tech{GWT} and \tech{TCL}. \newline
+				-- Developing new visual modules and optimising a modern frontend single page application (\tech{SPA}) written in \tech{GWT}. \newline
+				-- Using cutting edge frontend technologies to achieve pristine \tech{UX}.
+				\vspace{0.3ex}
+			}
 			\experience{06.2017}{09.2017}{Fullstack developer - \small{internship}}{https://smartmedia.com.pl}{SmartMedia, Gdańsk}{
 				Responsible for developing \emph{STOCK} - software for stocktaking and assets management, written in \tech{PHP}. \newline
-				-- Optimised frontend application written in \tech{JavaScript} and \tech{jQuery} library. (70\% reduction in load time)  \newline
-				-- Optimised \tech{SQL} queries for \tech{MySQL} and \tech{MSSQL} databases. (up to 90\% reduction in query time) \newline
+				-- Optimised frontend application written in \tech{JavaScript} and \tech{jQuery} library. (70\% reduction in load time).  \newline
+				-- Optimised \tech{SQL} queries for \tech{MySQL} and \tech{MSSQL} databases. (up to 90\% reduction in query time). \newline
 				-- Wrote a feature backporting script in \tech{Bash} and \tech{Git} which improved development time and satisfaction.
-				\vspace{0.5ex}
+				\vspace{0.3ex}
 			}
-			\experience{07.2016}{08.2016}{Java developer - \small{internship}}{https://dynatrace.com}{Dynatrace, Gdańsk}{
+				\experience{07.2016}{08.2016}{Java developer - \small{internship}}{https://dynatrace.com}{Dynatrace, Gdańsk}{
 				Developed an \href{https://github.com/Dynatrace/Dynatrace-AppMon-IntelliJ-IDEA-Integration-Plugin}{open source} \tech{IntelliJ Platform} plugin which provides integration between IDEs and company's flagship product. The plugin helps with instrumentation of unit tests and \tech{JVM} agent injection for application performance monitoring. Helped with the development of \tech{Jenkins} and \tech{Bamboo} plugins for test instrumentation in \tech{CI} environments.
-				\vspace{0.5ex}
+				\vspace{0.3ex}
 			}
 			\experience{09.2015}{04.2016}{Freelance Go developer}{}{pricerat.io}{
 				Developed a price analysis tool in \tech{Go} and \tech{Amazon SQS} for detecting price anomalies and webscraping issues. Was responsible for writing \tech{Regex}es for web scrapers. Wrote a highly configurable, \href{https://github.com/maciekmm/sitemap-generator/}{open source}, automatic sitemap generator.
-				\vspace{0.5ex}
+				\vspace{0.3ex}
 			}
 			\experience{12.2014}{05.2015}{Java developer}{}{AnimatedMOTD}{
 				Developed a Minecraft plugin which exploited game's protocol with an \tech{abstraction} layer that made the software trivial to adapt to different server platforms. Utilized \tech{multithreaded} connection handling, user storage, animation effects and documentation. It also featured a complex \tech{DRM} system. \textbf{900+} copies sold.
@@ -135,10 +141,9 @@
 	}
 
 	\begin{section}{\sectitle{\faTrophy}{Awards}}
-		\begin{tabularx}{\linewidth}{@{}p{2.8cm} | X r}
+		\begin{tabularx}{\linewidth}{@{}p{2.9cm} | X r}
 			\award{06.2017}{2nd}{\href{https://traveltothecloud.pl}{Travel To The Cloud} hackathon}{Go, Vue.js, Web Scraping}{
-				Together with a friend we created a solution that helps wheelchair-bound and deaf people find places with specific amenities such as doors of minimum width or adapted parking. The prototype earned a second place in the 24 hour long marathon.
-				\vspace{0.5ex}
+				Created a solution helping wheelchair-bound and deaf people find places with specific amenities.% The prototype earned a second place in the 24 hour long marathon.
 			}
 			\award{02.2017}{3rd}{\href{https://eti.pg.edu.pl/informacje}{Igrzyska Akademii ETI}}{Algorithms, C++}{}
 			\award{11.2016}{1st}{\href{http://apki.org/news/hack-heroes-znamy-laureatow/}{Hack Heroes} hackathon}{Go, Angular 2, Ionic, MySQL}{} 
@@ -148,8 +153,8 @@
 	\begin{section}{\sectitle{\faCogs}{Skills}}
 		\begin{tabularx}{\linewidth}{@{}l  X}
 			\textsc{languages} & Polish (native), English (advanced) \\
-			\textsc{programming languages} & Java, Go, PHP, SQL, Javascript(Vue.js), HTML5, CSS3, Bash \\
-			\textsc{tools} & Git, Maven, Jenkins, Jira, Docker, \LaTeX, Spreadsheets \\
+			\textsc{programming languages} & Java(GWT), Go, PHP, SQL(MySQL, MSSQL), TCL, Javascript(Vue.js), HTML5, CSS3, Bash \\
+			\textsc{tools} & Git, Maven, Jenkins, Gitlab CI, Jira, Docker, \LaTeX, Spreadsheets \\
 			\textsc{other} & GNU/Linux, working well in group or alone, good communication skills
 		\end{tabularx}
 	\end{section}
