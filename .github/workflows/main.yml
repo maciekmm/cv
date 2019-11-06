@@ -10,4 +10,4 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: cv.tex
-          extra_packages: "collection-latexextra sourcesanspro mweights euenc fontawesome" 
+          extra_packages: "collection-latexextra sourcesanspro mweights euenc fontawesome ly1" 
