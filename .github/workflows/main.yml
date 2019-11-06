@@ -10,4 +10,4 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: cv.tex
-          extra_system_packages: "texlive-latex-extra" 
+          extra_packages: "collection-latexextra" 
