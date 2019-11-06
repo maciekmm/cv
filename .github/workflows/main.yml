@@ -1,0 +1,17 @@
+name: Build LaTeX document
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: cv.tex
+          extra_packages: "collection-latexextra sourcesanspro mweights euenc fontawesome ly1" 
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "cv.pdf"
+          token: ${{ secrets.GITHUB_TOKEN }}
