@@ -10,4 +10,4 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: cv.tex
-          extra_system_packages: "texlive-fonts-recommended texlive-latex-recommended texlive-latex-recommended-doc_ texlive-pictures-doc_ texlive-latex-base-doc_ texlive-pstricks-doc_ texlive-latex-extra texlive-latex-extra-doc_ texlive-fonts-recommended-doc_" 
+          extra_system_packages: "texlive-latex-extra" 
