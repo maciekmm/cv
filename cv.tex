@@ -37,7 +37,7 @@
 \usepackage{fancyhdr}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[L]{\footnotesize{Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).}}
+\fancyfoot[L]{\tiny{Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).}}
 
 % prevent mid-word line breaks
 \usepackage[none]{hyphenat}
@@ -82,16 +82,16 @@
 	\end{center}
 
 	\begin{section}{\sectitle{\ \faUser}{\ Bio}}
-		A $20$ years old backend developer and tinkerer. Lives in Poland; born in Gdańsk, currently resides and studies Computer Science in Kraków. Linux user, open-source votary and privacy freak. Addicted to board games, cycling, sailing, skiing and geocaching. Listens to all kinds of music, prefers studio cinemas. Enthusiast of hackathons, motivated by interesting challenges and competition. Fast learner, works well in group or alone.
+		Fullstack developer and tinkerer. Lives in Poland; born in Gdańsk, currently resides and studies Computer Science in Kraków. Linux user, open-source votary and privacy freak. Addicted to board games, cycling, sailing, skiing and geocaching. Listens to all kinds of music, prefers studio cinemas. Enthusiast of hackathons, motivated by interesting challenges and competition. Fast learner, works well in group or alone.
 	\end{section}
 
 	\newcommand{\education}[6]{
-		\textsc{#1 --- #2} & #3: \textbf{#4} & \small{#5} \\[-0.5ex]
-		\ & \multicolumn{2}{l}{\footnotesize Extracurricular activity: #6}\\
+		\textsc{#1} & #3: \textbf{#4} & \small{#5} \\[-0.5ex]
+		\textsc{#2} & \multicolumn{2}{l}{\footnotesize Extracurricular activity: #6}\\
 	}
 
 	\begin{section}{\sectitle{\faGraduationCap}{Education}}
-		\begin{tabularx}{\linewidth}{@{}p{2.9cm} | X  r}
+		\begin{tabularx}{\linewidth}{@{}p{1.4cm} | X  r}
 			\education{2017}{present}{Major}{Computer Science}{AGH University of Science and Technology in Kraków, Poland}{Member of the Board at AKŻ - academic sailing club }
 			%{ \education{2014}{2017}{Faculty}{Maths \& IT}{V High School in Gdańsk, Poland}{member of a maths contest group}}%
 		\end{tabularx}
@@ -100,16 +100,17 @@
 	\newcommand{\tech}[1]{\textbf{#1}}
 
 	\newcommand{\experience}[6]{
-		\textsc{#1 --- #2} & \textbf{#3} & \ifx&#4& #5 \else \href{#4}{#5} \fi \\[-0.5ex]
-		\ & \multicolumn{2}{p{0.82\textwidth}}{\footnotesize{#6}} \\
+		\textsc{#1} & \textbf{#3} & \ifx&#4& #5 \else \href{#4}{#5} \fi \\[-0.5ex]
+	    \textsc{#2} & \multicolumn{2}{p{0.9\textwidth}}{\footnotesize{#6}} \\
 	}
 
 	\begin{section}{\sectitle{\faStar}{Experience}}
-		\begin{tabularx}{\linewidth}{@{}p{2.9cm} | X r}
+		\begin{tabularx}{\linewidth}{@{}p{1.4cm} | X r}
 			\experience{07.2018}{06.2019}{Software developer}{https://antsolutions.eu}{ANT sp. z o.o.}{
-				Responsible for developing visualisation software used in automation of factories. Written in \tech{Java} \tech{GWT} and \tech{TCL}. \newline
-				-- Developing new visual modules and optimising a modern frontend single page application (\tech{SPA}) written in \tech{GWT}. \newline
-				-- Using cutting edge frontend technologies to achieve pristine \tech{UX}.
+				Developing visualization software used in automation of production lines and responsible for: \newline
+				-- \tech{Optimizing} performance of a modern, frontend, single page application (\tech{SPA}) \newline
+				-- Automatic provisioning of testing/staging environments using \tech{GitLab DevOps}, \tech{Docker} \& \tech{Traefik} \newline
+				-- Maintaining a \tech{TCL} based, customer facing programming interface
 				\vspace{0.3ex}
 			}
 			\experience{06.2017}{09.2017}{Fullstack developer - \small{internship}}{https://smartmedia.com.pl}{SmartMedia, Gdańsk}{
@@ -141,7 +142,7 @@
 	}
 
 	\begin{section}{\sectitle{\faTrophy}{Awards}}
-		\begin{tabularx}{\linewidth}{@{}p{2.9cm} | X r}
+		\begin{tabularx}{\linewidth}{@{}p{1.4cm} | X r}
 			\award{06.2017}{2nd}{\href{https://traveltothecloud.pl}{Travel To The Cloud} hackathon}{Go, Vue.js, Web Scraping}{
 				Created a solution helping wheelchair-bound and deaf people find places with specific amenities.% The prototype earned a second place in the 24 hour long marathon.
 			}
@@ -160,6 +161,6 @@
 	\end{section}
 
 	\begin{section}{\sectitle{\faFile}{Testimonials}}
-		\small{\textit{I was responsible for managing Maciej's work during his internship at Dynatrace, and I really didn't have much to worry about, apart from running out of tasks planned for him. Maciej is a very talented developer, with great ideas and ability to make them happen. His work was of exceptional quality and technical skills far above expectations you might have for an intern. I'm looking forward to being able to work with Maciej again in the future.} \hfill{Wiktor Bachnik @ Dynatrace Ltd}}
+		\footnotesize{\textit{I was responsible for managing Maciej's work during his internship at Dynatrace, and I really didn't have much to worry about, apart from running out of tasks planned for him. Maciej is a very talented developer, with great ideas and ability to make them happen. His work was of exceptional quality and technical skills far above expectations you might have for an intern. I'm looking forward to being able to work with Maciej again in the future.} \hfill{Wiktor Bachnik @ Dynatrace Ltd}}
 	\end{section}
 \end{document}

@@ -5,5 +5,7 @@
 *.log
 *.out
 *.pdf
+*.fls
+*.fdb*
 
 confidential.tex
