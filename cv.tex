@@ -82,7 +82,7 @@
 	\end{center}
 
 	\begin{section}{\sectitle{\ \faUser}{\ Bio}}
-		Fullstack developer and tinkerer. Lives in Poland; born in Gdańsk, currently resides and studies Computer Science in Kraków. Linux user, open-source votary and privacy freak. Addicted to board games, cycling, sailing, skiing and geocaching. Listens to all kinds of music, prefers studio cinemas. Enthusiast of hackathons, motivated by interesting challenges and competition. Fast learner, works well in group or alone.
+		Backend developer and system architect. Pragmatist and scrupulous generalist. Open-source votary, Linux user. Speciality coffee enthusiast, board-games player, occasional cyclist, and sailor at heart. Works well in group or alone.
 	\end{section}
 
 	\newcommand{\education}[6]{
@@ -92,8 +92,7 @@
 
 	\begin{section}{\sectitle{\faGraduationCap}{Education}}
 		\begin{tabularx}{\linewidth}{@{}p{1.4cm} | X  r}
-			\education{2017}{present}{Major}{Computer Science}{AGH University of Science and Technology in Kraków, Poland}{Member of the Board at AKŻ - academic sailing club }
-			%{ \education{2014}{2017}{Faculty}{Maths \& IT}{V High School in Gdańsk, Poland}{member of a maths contest group}}%
+			\education{2017}{2021}{Major}{Computer Science}{AGH University of Science and Technology in Kraków, Poland}{Member of the Board at AKŻ - academic sailing club. Exchange program participant (2019/2020).}
 		\end{tabularx}
 	\end{section}
 
@@ -106,30 +105,42 @@
 
 	\begin{section}{\sectitle{\faStar}{Experience}}
 		\begin{tabularx}{\linewidth}{@{}p{1.4cm} | X r}
-			\experience{07.2018}{06.2019}{Java software developer}{https://antsolutions.eu}{ANT sp. z o.o.}{
-				Developing visualization software in \tech{Java} used in automation of production lines and responsible for: \newline
+			\experience{03.2020}{08.2021}{Java Technical Lead / System Architect}{https://crustlab.com}{Crustlab, Kraków}{
+				-- Architected an \tech{ETL BI} solution for the sports-betting industry. \newline
+				-- Was responsible for \tech{CI/CD pipelines} and infrastructure deployment. \newline
+				-- Gathered business requirements from project stakeholders. \newline
+				-- Conducted technical interviews. \newline
+				Technologies used: \tech{Java (Spring), PostgreSQL, Terraform, Kubernetes (EKS), Istio, Jasper}.
+				\vspace{0.8ex}
+				\newline
+				\normalsize{\textbf{Scala Developer}} \newline
+				\footnotesize{
+					-- Developed a currency exchange platform written in an \textbf{event-sourced}, \textbf{actor-based} architecture. \newline
+					-- Helped transform the company to a \textbf{DevOps} oriented mindset.\newline
+					-- Supervised production environments based on \textbf{Kubernetes} and \textbf{Docker Swarm}.
+				}
+				\vspace{0.3ex}
+			}
+			\experience{07.2018}{06.2019}{Java software developer}{https://antsolutions.eu}{ANT, Kraków}{
+				Developed visualization software in \tech{Java} used in automation of production lines and was responsible for: \newline
 				-- \tech{Optimizing} performance of a modern, frontend, single page application (\tech{SPA}) \newline
-				-- Automatic provisioning of testing/staging environments using \tech{GitLab DevOps}, \tech{Docker} \& \tech{Traefik} \newline
+				-- Automatic provisioning of testing/staging environments using \tech{GitLab CI/CD}, \tech{Docker} \& \tech{Traefik} \newline
 				-- Maintaining a \tech{TCL} based, customer facing programming interface
 				\vspace{0.3ex}
 			}
 			\experience{06.2017}{09.2017}{Fullstack developer - \small{internship}}{https://smartmedia.com.pl}{SmartMedia, Gdańsk}{
 				Responsible for developing \emph{STOCK} - software for stocktaking and assets management, written in \tech{PHP}. \newline
-				-- Optimised frontend application written in \tech{JavaScript} and \tech{jQuery} library. (70\% reduction in load time).  \newline
+				-- Optimised frontend application written in \tech{JavaScript} and jQuery library. (70\% reduction in load time).  \newline
 				-- Optimised \tech{SQL} queries for \tech{MySQL} and \tech{MSSQL} databases. (up to 90\% reduction in query time). \newline
 				-- Wrote a feature backporting script in \tech{Bash} and \tech{Git} which improved development time and satisfaction.
 				\vspace{0.3ex}
 			}
 				\experience{07.2016}{08.2016}{Java developer - \small{internship}}{https://dynatrace.com}{Dynatrace, Gdańsk}{
-				Developed an \href{https://github.com/Dynatrace/Dynatrace-AppMon-IntelliJ-IDEA-Integration-Plugin}{open source} \tech{IntelliJ Platform} plugin which provides integration between IDEs and company's flagship product. The plugin helps with instrumentation of unit tests and \tech{JVM} agent injection for application performance monitoring. Helped with the development of \tech{Jenkins} and \tech{Bamboo} plugins for test instrumentation in \tech{CI} environments.
+				Developed an \href{https://github.com/Dynatrace/Dynatrace-AppMon-IntelliJ-IDEA-Integration-Plugin}{open source} \tech{IntelliJ Platform} plugin which provides integration between IDEs and company's flagship product. The plugin helped with instrumentation of unit tests and \tech{JVM} agent injection for application performance monitoring. Helped with the development of \tech{Jenkins} and \tech{Bamboo} plugins for test instrumentation in \tech{CI} environments.
 				\vspace{0.3ex}
 			}
-			\experience{09.2015}{04.2016}{Freelance Go developer}{}{pricerat.io}{
-				Developed a price analysis tool in \tech{Go} and \tech{Amazon SQS} for detecting price anomalies and webscraping issues. Was responsible for writing \tech{Regex}es for web scrapers. Wrote a highly configurable, \href{https://github.com/maciekmm/sitemap-generator/}{open source}, automatic sitemap generator.
-				\vspace{0.3ex}
-			}
-			\experience{12.2014}{05.2015}{Java developer}{}{AnimatedMOTD}{
-				Developed a Minecraft plugin which exploited game's protocol with an \tech{abstraction} layer that made the software trivial to adapt to different server platforms. Utilized \tech{multithreaded} connection handling, user storage, animation effects and documentation. It also featured a complex \tech{DRM} system. \textbf{900+} copies sold.
+			\experience{12.2014}{05.2015}{Java developer}{}{AnimatedMOTD, Remote}{
+				Developed a Minecraft plugin which exploited game's protocol with an \tech{abstraction} layer that made the software trivial to adapt to different server platforms. Utilized \tech{multithreaded} connection handling, user storage, animation effects and documentation. It also featured a complex \tech{DRM} system developed by my colleague. Provided support for users. 
 			}
 		\end{tabularx}
 	\end{section}
@@ -141,26 +152,25 @@
 		\fi
 	}
 
-	\begin{section}{\sectitle{\faTrophy}{Awards}}
-		\begin{tabularx}{\linewidth}{@{}p{1.4cm} | X r}
-			\award{06.2017}{2nd}{\href{https://traveltothecloud.pl}{Travel To The Cloud} hackathon}{Go, Vue.js, Web Scraping}{
-				Created a solution helping wheelchair-bound and deaf people find places with specific amenities.% The prototype earned a second place in the 24 hour long marathon.
-			}
-			\award{02.2017}{3rd}{\href{https://eti.pg.edu.pl/informacje}{Igrzyska Akademii ETI}}{Algorithms, C++}{}
-			\award{11.2016}{1st}{\href{http://apki.org/news/hack-heroes-znamy-laureatow/}{Hack Heroes} hackathon}{Go, Angular 2, Ionic, MySQL}{} 
-		\end{tabularx}
-	\end{section}
+	
+%	\begin{section}{\sectitle{\faTrophy}{Awards}}
+%		\begin{tabularx}{\linewidth}{@{}p{1.4cm} | X r}
+%			\award{06.2017}{2nd}{\href{https://traveltothecloud.pl}{Travel To The Cloud} hackathon}{Go, Vue.js, Web Scraping}{}
+%			\award{02.2017}{3rd}{\href{https://eti.pg.edu.pl/informacje}{Igrzyska Akademii ETI}}{Algorithms, C++}{}
+%			\award{11.2016}{1st}{\href{http://apki.org/news/hack-heroes-znamy-laureatow/}{Hack Heroes} hackathon}{Go, Angular 2, Ionic, MySQL}{} 
+%		\end{tabularx}
+%	\end{section}
 
 	\begin{section}{\sectitle{\faCogs}{Skills}}
 		\begin{tabularx}{\linewidth}{@{}l  X}
-			\textsc{languages} & Polish (native), English (advanced), Spanish (A2) \\
-			\textsc{programming languages} & Java(GWT), Go, PHP, SQL(MySQL, MSSQL), TCL, Javascript(Vue.js), HTML5, CSS3, Bash \\
-			\textsc{tools} & Git, Maven, Jenkins, Gitlab CI, Jira, Docker, \LaTeX, Spreadsheets \\
-			\textsc{other} & GNU/Linux, working well in group or alone, good communication skills
+			\textsc{languages} & Polish (native), English (advanced) \\
+			\textsc{programming} & \\
+			\hfill \textsc{\footnotesize{Working knowledge in}} & Java (Spring, Reactor, R2DBC), Go, Git, Bash, Javascript (React, WebExtensions), PostgreSQL \\
+			\hfill \textsc{\footnotesize{Used to work with}} & Scala, MongoDB, Cassandra, Python, Vue.js, PHP, TCL, GWT, MSSQL, MySQL \\
+			\textsc{cloud \& ops} & \\
+			\hfill \textsc{\footnotesize{Working knowledge in}} & Linux, AWS~(EKS,~RDS), Docker, Istio, Kubernetes, Helm, Terraform, Kafka, GRPC, Protobuf\\
+			\hfill \textsc{\footnotesize{Used to work with:}} & Ansible, Loki, Traefik, Docker Swarm, Prometheus, Selenium \\
+			\textsc{other} & system design, good communication skills 
 		\end{tabularx}
-	\end{section}
-
-	\begin{section}{\sectitle{\faFile}{Testimonials}}
-		\footnotesize{\textit{I was responsible for managing Maciej's work during his internship at Dynatrace, and I really didn't have much to worry about, apart from running out of tasks planned for him. Maciej is a very talented developer, with great ideas and ability to make them happen. His work was of exceptional quality and technical skills far above expectations you might have for an intern. I'm looking forward to being able to work with Maciej again in the future.} \hfill{Wiktor Bachnik @ Dynatrace Ltd}}
 	\end{section}
 \end{document}
